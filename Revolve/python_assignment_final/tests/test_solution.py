@@ -1,16 +1,10 @@
 
 import python_assignment_final.solution.solution_start as soln
 
-# PARAMS = {'customers_location': './input_data/starter/customers.csv', 
-# 'products_location': './input_data/starter/products.csv', 
-# 'transactions_location': './input_data/starter/transactions/', 
-# 'output_location': './output_data/outputs/'}
-
-
-PARAMS = {'customers_location': 'C://Users//91797//Desktop//Revolve_1//Revolve//input_data//starter//customers.csv', 
-'products_location': 'C://Users//91797//Desktop//Revolve_1//Revolve//input_data//starter//products.csv', 
-'transactions_location': 'C://Users//91797//Desktop//Revolve_1//Revolve//input_data//starter//transactions//', 
-'output_location': 'C://Users//91797//Desktop//Revolve_1//Revolve//output_data//outputs//'}
+PARAMS = {'customers_location': './input_data/starter/customers.csv', 
+'products_location': './input_data/starter/products.csv', 
+'transactions_location': './input_data/starter/transactions/', 
+'output_location': './output_data/outputs/'}
 
 
 def test_customers_data():

@@ -1,6 +1,5 @@
 import argparse
 import pandas as pd
-import os
 from glob2 import glob
 
 def get_params() -> dict:
@@ -10,12 +9,11 @@ def get_params() -> dict:
     # Logging
     print("\n\n Capturing the locations for the data")
     parser = argparse.ArgumentParser(description='DataTest')
-    parser.add_argument('--customers_location', required=False, default="C://Users//91797//Desktop//Revolve_1//Revolve//input_data//starter//customers.csv")
-    parser.add_argument('--products_location', required=False, default="C://Users//91797/Desktop//Revolve_1//Revolve//input_data//starter//products.csv")
-    parser.add_argument('--transactions_location', required=False, default="C://Users//91797//Desktop//Revolve_1//Revolve//input_data//starter//transactions//")
-    parser.add_argument('--output_location', required=False, default="C://Users//91797//Desktop//Revolve_1//Revolve//output_data//outputs//")
+    parser.add_argument('--customers_location', required=False, default="./input_data/starter/customers.csv")
+    parser.add_argument('--products_location', required=False, default="./input_data/starter/products.csv")
+    parser.add_argument('--transactions_location', required=False, default="./input_data/starter/transactions/")
+    parser.add_argument('--output_location', required=False, default="./output_data/outputs/")
     return vars(parser.parse_args())
-
 
 def get_cust_data(params:dict) -> pd.DataFrame:
     """
