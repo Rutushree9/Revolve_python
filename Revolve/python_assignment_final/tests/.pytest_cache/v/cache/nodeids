@@ -1,0 +1,7 @@
+[
+  "test_solution.py::test_check",
+  "test_solution.py::test_customers_data",
+  "test_solution.py::test_merged",
+  "test_solution.py::test_product_data",
+  "test_solution.py::test_transactions_data"
+]
